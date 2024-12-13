@@ -4,6 +4,24 @@ fun main() {
     dataTypes();
     ifExpressions();
     whenExpression();
+    arrays();
+}
+
+fun arrays() {
+    val colors = arrayOf("Red", "Green", "Blue");
+    colors[0] = "Yellow";
+    println(colors[0]);
+    println(colors.size);
+
+    if ("Green" in colors) {
+        println("있다!");
+    } else {
+        println("없다!");
+    }
+
+    for (color in colors) {
+        println(color);
+    }
 }
 
 fun whenExpression() {
