@@ -5,6 +5,20 @@ fun main() {
     ifExpressions();
     whenExpression();
     arrays();
+    ranges();
+}
+
+fun ranges() {
+    // (변수명 in 시작범위..끝 범위)
+    for (chars in 'a'..'x') {
+        print(chars + " ");
+    }
+    println();
+    for (nums in 5..15) {
+        print(nums);
+        print(' ');
+    }
+    println();
 }
 
 fun arrays() {
