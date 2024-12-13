@@ -18,9 +18,11 @@ fun main() {
 //    car1.year = 2023;
 
     val car1 = Car("현대", "그랜져", 2023);
-    println(car1.brand);
-    println(car1.model);
-    println(car1.year);
+//    println(car1.brand);
+//    println(car1.model);
+//    println(car1.year);
+    car1.drive(150);
+    car1.introduce();
 }
 
 // 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
