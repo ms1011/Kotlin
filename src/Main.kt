@@ -12,10 +12,15 @@ fun main() {
     result = addNumbers2(2, 9);
     println(result);
 
-    val car1 = Car();
-    car1.brand = "현대";
-    car1.model = "그랜져";
-    car1.year = 2023;
+//    val car1 = Car();
+//    car1.brand = "현대";
+//    car1.model = "그랜져";
+//    car1.year = 2023;
+
+    val car1 = Car("현대", "그랜져", 2023);
+    println(car1.brand);
+    println(car1.model);
+    println(car1.year);
 }
 
 // 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
