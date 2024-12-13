@@ -1,6 +1,7 @@
 fun main() {
     println("Hello World!");
     variables();
+    dataTypes();
 }
 
 fun variables() {
@@ -13,4 +14,26 @@ fun variables() {
     val birthYear2: Int = 1992;
     println(name2);
     println(birthYear2);
+}
+
+fun dataTypes() {
+    // 자료형 명시 X
+    val myNum = 5;
+    val myDouble = 3.14;
+    val myLetter = 'A';
+    val myBoolean = true;
+    val myText = "Hello";
+
+    // 자료형 명시 O
+    val myNum2: Int = 5;        // Byte, Short, Int, Long
+    val myNum3: Float = 3.14F;
+    val myDouble2: Double = 3.14;
+    val myLetter2: Char = 'A';
+    val myBoolean2: Boolean = true;
+    val myText2: String = "Hello";
+
+    // 형변환
+    val x: Int = 3;
+    val y: Long = x.toLong();
+    println(y);
 }
