@@ -2,6 +2,19 @@ fun main() {
     println("Hello World!");
     variables();
     dataTypes();
+    ifExpressions();
+}
+
+fun ifExpressions() {
+    val time = 20;
+//    val greeting = if (time < 12) {
+//        "좋은 아침";
+//    } else {
+//        "식사는 하셨어요?";
+//    }
+    val greeting = if (time < 12) "좋은 아침" else "식사는 하셨어요?";
+
+    println(greeting);
 }
 
 fun variables() {
