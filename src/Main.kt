@@ -6,6 +6,24 @@ fun main() {
     whenExpression();
     arrays();
     ranges();
+    myFunction("홍", "길동", 20);
+    var result = addNumbers(3, 5);
+    println(result);
+    result = addNumbers2(2, 9);
+    println(result);
+}
+
+// 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
+fun addNumbers2(x: Int, y: Int) = x + y;
+
+// fun {함수명}({매개변수}: {자료형}): {반환형}
+fun addNumbers(x: Int, y: Int): Int {
+    return x + y;
+}
+
+
+fun myFunction(lastName: String, firstName: String, age: Int) {
+    println(lastName + firstName + " " + age.toString() + "살");
 }
 
 fun ranges() {
