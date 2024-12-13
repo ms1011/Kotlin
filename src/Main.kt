@@ -23,6 +23,10 @@ fun main() {
 //    println(car1.year);
     car1.drive(150);
     car1.introduce();
+
+    val dog1 = Dog();
+    dog1.bark();
+    println(dog1.name);
 }
 
 // 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
