@@ -3,6 +3,23 @@ fun main() {
     variables();
     dataTypes();
     ifExpressions();
+    whenExpression();
+}
+
+fun whenExpression() {
+    val day = 4;
+
+    val result = when (day) {
+        1 -> "월";
+        2 -> "화";
+        3 -> "수";
+        4 -> "목";
+        5 -> "금";
+        6 -> "토";
+        7 -> "일";
+        else -> "잘못된 요일";
+    }
+    println(result);
 }
 
 fun ifExpressions() {
