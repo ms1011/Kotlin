@@ -1,32 +1,47 @@
+import Currency
+import USD
+import KRW
+import convert
+
 fun main() {
-    println("Hello World!");
-    variables();
-    dataTypes();
-    ifExpressions();
-    whenExpression();
-    arrays();
-    ranges();
-    myFunction("홍", "길동", 20);
-    var result = addNumbers(3, 5);
-    println(result);
-    result = addNumbers2(2, 9);
-    println(result);
+//    println("Hello World!");
+//    variables();
+//    dataTypes();
+//    ifExpressions();
+//    whenExpression();
+//    arrays();
+//    ranges();
+//    myFunction("홍", "길동", 20);
+//    var result = addNumbers(3, 5);
+//    println(result);
+//    result = addNumbers2(2, 9);
+//    println(result);
 
 //    val car1 = Car();
 //    car1.brand = "현대";
 //    car1.model = "그랜져";
 //    car1.year = 2023;
 
-    val car1 = Car("현대", "그랜져", 2023);
+//    val car1 = Car("현대", "그랜져", 2023);
 //    println(car1.brand);
 //    println(car1.model);
 //    println(car1.year);
-    car1.drive(150);
-    car1.introduce();
+//    car1.drive(150);
+//    car1.introduce();
+//
+//    val dog1 = Dog();
+//    dog1.bark();
+//    println(dog1.name);
 
-    val dog1 = Dog();
-    dog1.bark();
-    println(dog1.name);
+    val usd = USD(100.0)
+    val usdToKrwRate = 1420.0
+    val convertedToKrw = convert(usd, usdToKrwRate)
+    println("Converted: ${usd.amount} -> ${convertedToKrw.amount}")
+
+    val krw = KRW(284000.0)
+    val krwToUsdRate = 1 / usdToKrwRate
+    val convertedToUsd = convert(krw, krwToUsdRate)
+    println("Converted: ${krw.amount} -> ${convertedToUsd.amount}")
 }
 
 // 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
