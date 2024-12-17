@@ -42,6 +42,13 @@ fun main() {
     val krwToUsdRate = 1 / usdToKrwRate
     val convertedToUsd = convert(krw, krwToUsdRate)
     println("Converted: ${krw.amount} -> ${convertedToUsd.amount}")
+
+    val nullableClass = Nullable()
+    val nonNullable: String = "Hello"
+    val nullable: String? = null
+
+    nullableClass.printLength(nonNullable)
+    nullableClass.printLength(nullable)
 }
 
 // 중괄호를 사용하지 않고 등호(=) 와 return 할 값을 전달해도 된다
